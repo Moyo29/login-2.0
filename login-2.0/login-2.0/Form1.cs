@@ -31,5 +31,26 @@ namespace login_2._0
         {
 
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            if(txtNomb.Text == "juancho" && txtContra.Text == "123tamarindo")
+            {
+                MessageBox.Show("Se ha inciado sesión correctamente. ");
+            }
+            else
+            {
+                MessageBox.Show("Error en el Nombre de usuario o contraseña. INTENTA DE NUEVO. ");
+
+                txtNomb.Text = "";
+                txtContra.Text = "";
+                txtNomb.Focus();
+            }
+        }
     }
 }
